@@ -3,7 +3,7 @@
 #include "driver/gpio.h"
 #include "soc/gpio_reg.h"
 #include "freertos/task.h"
-
+#include "esp_log.h"
 void app_main(void)
 {
   (*(volatile uint32_t *)GPIO_ENABLE_REG) = 0x02000000;
